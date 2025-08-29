@@ -19,6 +19,7 @@ src/solmoe/entrypoints/__init__.py
 src/solmoe/entrypoints/backtest_vector.py
 src/solmoe/entrypoints/build_features.py
 src/solmoe/entrypoints/build_offline.py
+src/solmoe/entrypoints/evaluate_walkforward.py
 src/solmoe/entrypoints/ingest_derivs.py
 src/solmoe/entrypoints/ingest_onchain.py
 src/solmoe/entrypoints/ingest_spot.py
@@ -30,6 +31,8 @@ src/solmoe/entrypoints/train_experts.py
 src/solmoe/entrypoints/train_gate_awac.py
 src/solmoe/entrypoints/train_gate_bandit.py
 src/solmoe/entrypoints/train_mixture_critic.py
+src/solmoe/entrypoints/tune_baseline.py
+src/solmoe/entrypoints/tune_ensemble.py
 src/solmoe/events/__init__.py
 src/solmoe/events/calendar.py
 src/solmoe/execution/__init__.py
