@@ -1,0 +1,34 @@
+data:
+  bar: "1min"
+  venues: ["coinbase","kraken"]
+  symbol: "SOL-USD"
+  out_dir: "./data"
+features:
+  dual_timescale: {fast: "1min", slow: "60min"}
+  use_onchain: false
+  use_derivs: false
+rl:
+  horizons: ["5m","30m","2h","1d"]
+  expectile: 0.8
+  gamma: 0.997
+  behavior_kl: 0.001
+moe:
+  k: 3
+  top2: true
+  temps: [2.0,2.0,2.0]
+gate:
+  method: "bandit"  # or "awac"
+  kl_baseline_eps: 0.1
+calibration:
+  jsd_threshold: 0.2
+  coverage_target: 0.8
+execution:
+  maker_fee_bps: 0.0
+  taker_fee_bps: 5.0
+  latency_ms: 50
+  risk_cap: 0.2
+  slip_model: {alpha: 0.6, kappa_init: 1e-6}
+governance:
+  canary_notional: 0.05
+  embargo_bars: 60
+

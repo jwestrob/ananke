@@ -1,0 +1,1 @@
+src/solmoe/AGENTS.md

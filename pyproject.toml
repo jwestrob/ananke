@@ -1,0 +1,12 @@
+[project]
+name = "sol-moe-rl"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+ "torch","numpy","pandas","pydantic>=2","typer","hydra-core","omegaconf","einops","peft",
+ "scikit-learn","scipy","pyarrow","fastparquet","aiohttp","websockets","requests","uvloop",
+ "loguru","rich","vectorbt","numba","matplotlib","python-dotenv","faiss-cpu"
+]
+[tool.setuptools]
+packages = { find = { where = ["src"] } }
+
